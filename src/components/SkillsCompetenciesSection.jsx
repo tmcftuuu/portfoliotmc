@@ -43,25 +43,21 @@ export default function SkillsCompetenciesSection() {
 
   return (
     <section id="skills" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Background glow */}
-      <div className="absolute top-1/3 -left-10 w-[500px] h-[500px] bg-purple-500/15 rounded-full blur-[120px] pointer-events-none animate-orb-2" />
-      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-cyan-400/15 rounded-full blur-[110px] pointer-events-none animate-orb-1" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="mb-10">
+        <div className="mb-10 animate-fade-rise">
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-xs px-3.5 py-1 rounded-full bg-purple-400/20 text-purple-300 border border-purple-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-purple-300" />
+            <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/15 text-cyan-300 border border-cyan-400/35 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
               <span>SKILLS & COMPETENCIES</span>
             </span>
-            <div className="h-[1px] w-12 bg-gradient-to-r from-purple-400/60 to-transparent" />
+            <div className="h-[1px] w-12 bg-gradient-to-r from-cyan-400/60 to-transparent" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight">
             KỸ NĂNG
           </h2>
-          <div className="text-base sm:text-lg font-bold text-gradient-rainbow mt-1">
+          <div className="text-base sm:text-lg font-bold text-gradient-cyan mt-1">
             Bộ kỹ năng công việc
           </div>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl font-normal leading-relaxed">
@@ -76,12 +72,12 @@ export default function SkillsCompetenciesSection() {
             return (
               <div
                 key={idx}
-                className="rounded-3xl liquid-glass liquid-glass-hover p-6 sm:p-7 border border-white/15 flex flex-col justify-between group shadow-xl"
+                className={`rounded-3xl liquid-glass liquid-glass-card p-6 sm:p-7 flex flex-col justify-between group shadow-xl animate-fade-rise delay-${(idx + 1) * 100}`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${skill.color} p-[1.5px] shadow-md`}>
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                     </div>
@@ -90,7 +86,7 @@ export default function SkillsCompetenciesSection() {
                     </span>
                   </div>
 
-                  <h3 className="font-extrabold text-base sm:text-lg text-white group-hover:text-cyan-300 transition-colors mb-2">
+                  <h3 className="font-heading font-bold text-base sm:text-lg text-white group-hover:text-cyan-300 transition-colors mb-2">
                     {skill.title}
                   </h3>
 

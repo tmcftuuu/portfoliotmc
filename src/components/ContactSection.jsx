@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2, Phone, MapPin, MessageSquare, ArrowRight, Building2, Sparkles, Copy, Check } from 'lucide-react';
+import { Send, CheckCircle2, Phone, MapPin, MessageSquare, ArrowRight, Sparkles, Copy, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function ContactSection({ profile }) {
@@ -39,23 +39,20 @@ export default function ContactSection({ profile }) {
 
   return (
     <section id="contact" className="py-14 sm:py-20 relative overflow-hidden scroll-mt-24">
-      {/* Background glowing gradients */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-gradient-to-r from-cyan-400/20 via-purple-500/20 to-pink-500/20 rounded-full blur-[130px] pointer-events-none animate-orb-1" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-12 animate-fade-rise">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
+            <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/15 text-cyan-300 border border-cyan-400/35 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
               <span>CONTACT INFORMATION</span>
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight">
             THÔNG TIN LIÊN HỆ
           </h2>
-          <div className="text-lg sm:text-xl font-bold text-gradient-rainbow mt-1">
+          <div className="text-lg sm:text-xl font-bold text-gradient-cyan mt-1">
             Kết nối trực tiếp
           </div>
           <p className="text-slate-300 text-sm sm:text-base mt-2.5 font-normal max-w-xl mx-auto leading-relaxed">
@@ -65,9 +62,9 @@ export default function ContactSection({ profile }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Info Panel (lg:col-span-5) */}
-          <div className="lg:col-span-5 rounded-3xl liquid-glass p-7 sm:p-8 border border-white/15 space-y-5 shadow-2xl">
+          <div className="lg:col-span-5 rounded-3xl liquid-glass liquid-glass-card p-7 sm:p-8 space-y-5 shadow-2xl animate-fade-rise delay-100">
             <div className="flex items-center justify-between pb-3.5 border-b border-white/15">
-              <h3 className="font-extrabold text-xl text-white">
+              <h3 className="font-heading font-bold text-2xl text-white">
                 Thông tin cá nhân
               </h3>
               <span className="px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-xs font-semibold">
@@ -77,7 +74,7 @@ export default function ContactSection({ profile }) {
 
             <div className="space-y-3.5">
               {/* Phone / Zalo */}
-              <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-cyan-400/50 flex items-center justify-between transition-all group">
+              <div className="p-4 rounded-2xl bg-[#070b18]/70 border border-white/15 hover:border-cyan-400/50 flex items-center justify-between transition-all group">
                 <a href="tel:0395569183" className="flex items-center gap-3.5 flex-1">
                   <div className="w-11 h-11 rounded-xl bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/40">
                     <Phone className="w-5 h-5" />
@@ -99,7 +96,7 @@ export default function ContactSection({ profile }) {
               </div>
 
               {/* Facebook */}
-              <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center gap-3.5">
+              <div className="p-4 rounded-2xl bg-[#070b18]/70 border border-white/15 flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center shrink-0 border border-purple-400/40">
                   <MessageSquare className="w-5 h-5" />
                 </div>
@@ -112,7 +109,7 @@ export default function ContactSection({ profile }) {
               </div>
 
               {/* Address */}
-              <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center gap-3.5">
+              <div className="p-4 rounded-2xl bg-[#070b18]/70 border border-white/15 flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-xl bg-pink-500/20 text-pink-300 flex items-center justify-center shrink-0 border border-pink-400/40">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -121,20 +118,6 @@ export default function ContactSection({ profile }) {
                   <div className="text-base font-bold text-white">
                     Yên Hoà, Cầu Giấy, Hà Nội
                   </div>
-                </div>
-              </div>
-
-              {/* University */}
-              <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0 border border-emerald-400/40">
-                  <Building2 className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="text-[11px] text-slate-300 font-medium">Trường đào tạo</div>
-                  <div className="text-sm font-bold text-white">
-                    Trường Đại học Ngoại Thương (FTU)
-                  </div>
-                  <div className="text-xs text-slate-300 mt-0.5">Sinh viên năm 3 Kinh tế Đối ngoại • GPA 3.77</div>
                 </div>
               </div>
             </div>
@@ -146,13 +129,13 @@ export default function ContactSection({ profile }) {
           </div>
 
           {/* Right Interactive Form (lg:col-span-7) */}
-          <div className="lg:col-span-7 rounded-3xl liquid-glass p-7 sm:p-9 border border-white/15 relative shadow-2xl">
+          <div className="lg:col-span-7 rounded-3xl liquid-glass liquid-glass-card p-7 sm:p-9 relative shadow-2xl animate-fade-rise delay-200">
             {submitted ? (
               <div className="py-14 text-center space-y-4">
                 <div className="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-400 mx-auto flex items-center justify-center">
                   <CheckCircle2 className="w-7 h-7" />
                 </div>
-                <h3 className="font-extrabold text-2xl text-white">
+                <h3 className="font-heading font-bold text-2xl text-white">
                   Đã gửi tin nhắn đến Mai Chi!
                 </h3>
                 <p className="text-slate-200 text-sm max-w-md mx-auto font-normal">
@@ -178,7 +161,7 @@ export default function ContactSection({ profile }) {
                       placeholder="Ví dụ: Anh / Chị Tuyển dụng"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#060a16]/80 border border-white/15 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
                     />
                   </div>
 
@@ -192,7 +175,7 @@ export default function ContactSection({ profile }) {
                       placeholder="email@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#060a16]/80 border border-white/15 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
                     />
                   </div>
                 </div>
@@ -207,7 +190,7 @@ export default function ContactSection({ profile }) {
                       placeholder="09xx xxx xxx"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#060a16]/80 border border-white/15 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors"
                     />
                   </div>
 
@@ -218,7 +201,7 @@ export default function ContactSection({ profile }) {
                     <select
                       value={formData.topic}
                       onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-[#0e1736] border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white transition-colors"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#0a1026] border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white transition-colors"
                     >
                       <option value="Cơ hội Tuyển dụng / Thực tập Ngân hàng">Cơ hội Tuyển dụng / Thực tập Ngân hàng</option>
                       <option value="Lời mời phỏng vấn vị trí Tín dụng / QHKH">Lời mời phỏng vấn vị trí Tín dụng / QHKH</option>
@@ -237,7 +220,7 @@ export default function ContactSection({ profile }) {
                     placeholder="Nhập thông điệp, yêu cầu tuyển dụng hoặc lời nhắn gửi cho Mai Chi..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 focus:border-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#060a16]/80 border border-white/15 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition-colors resize-none"
                   />
                 </div>
 
@@ -255,8 +238,8 @@ export default function ContactSection({ profile }) {
 
         {/* Footer */}
         <div className="mt-16 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-300 gap-3">
-          <div>
-            © {new Date().getFullYear()} TRỊNH MAI CHI — Sinh viên Đại học Ngoại Thương & BIDV Intern.
+          <div className="font-heading font-semibold">
+            © {new Date().getFullYear()} TRỊNH MAI CHI.
           </div>
           <div className="flex items-center gap-2 text-cyan-300 font-medium">
             <span>Yên Hoà, Cầu Giấy, Hà Nội • Điện thoại: 0395 569 183</span>

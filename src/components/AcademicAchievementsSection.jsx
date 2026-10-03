@@ -47,13 +47,9 @@ export default function AcademicAchievementsSection() {
 
   return (
     <section id="achievements" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Ambient background glow */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-cyan-400/15 rounded-full blur-[110px] pointer-events-none animate-orb-1" />
-      <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-pink-500/15 rounded-full blur-[120px] pointer-events-none animate-orb-2" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 animate-fade-rise">
           <div>
             <div className="flex items-center gap-3 mb-3">
               <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
@@ -63,10 +59,10 @@ export default function AcademicAchievementsSection() {
               <div className="h-[1px] w-12 bg-gradient-to-r from-cyan-400/60 to-transparent" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
               THÀNH TÍCH HỌC TẬP
             </h2>
-            <div className="text-base sm:text-lg font-bold text-gradient-rainbow mt-1">
+            <div className="text-base sm:text-lg font-semibold text-gradient-cyan mt-1">
               TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG — Chuyên ngành: Kinh tế Đối ngoại
             </div>
             <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-xl font-normal leading-relaxed">
@@ -74,12 +70,12 @@ export default function AcademicAchievementsSection() {
             </p>
           </div>
 
-          <div className="p-4 rounded-2xl liquid-glass border border-cyan-400/40 text-center shrink-0">
+          <div className="p-4 rounded-2xl liquid-glass liquid-glass-card border border-cyan-400/40 text-center shrink-0 shadow-xl">
             <div className="text-xs text-cyan-300 font-bold uppercase tracking-wider">
               GPA Tích Luỹ Xuất Sắc
             </div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">
-              3.77 <span className="text-sm font-normal text-slate-400">/ 4.0</span>
+            <div className="text-2xl sm:text-3xl font-extrabold font-heading text-white mt-0.5 tracking-tight">
+              3.77 <span className="text-sm font-sans font-normal text-slate-400">/ 4.0</span>
             </div>
             <div className="text-[11px] text-emerald-300 font-semibold mt-1">
               Top Đầu Chuyên Ngành FTU
@@ -89,15 +85,15 @@ export default function AcademicAchievementsSection() {
 
         {/* 4 Achievement Cards Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {achievements.map((item) => {
+          {achievements.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.code}
-                className="rounded-3xl liquid-glass liquid-glass-hover p-7 sm:p-8 border border-white/15 relative overflow-hidden group flex flex-col justify-between shadow-xl"
+                className={`rounded-3xl liquid-glass liquid-glass-card p-7 sm:p-8 relative overflow-hidden group flex flex-col justify-between shadow-2xl animate-fade-rise ${idx % 2 === 0 ? 'delay-100' : 'delay-200'}`}
               >
                 {/* Glow accent */}
-                <div className={`absolute top-0 right-0 w-44 h-44 bg-gradient-to-br ${item.color} opacity-20 rounded-full blur-3xl group-hover:opacity-35 transition-opacity duration-500 pointer-events-none`} />
+                <div className={`absolute top-0 right-0 w-44 h-44 bg-gradient-to-br ${item.color} opacity-15 rounded-full blur-3xl group-hover:opacity-30 transition-opacity duration-500 pointer-events-none`} />
 
                 <div>
                   {/* Category & Badge */}
@@ -113,23 +109,23 @@ export default function AcademicAchievementsSection() {
                   {/* Title and Icon */}
                   <div className="flex items-center gap-3.5 mb-3.5">
                     <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${item.color} p-[1.5px] shadow-md shrink-0`}>
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                     </div>
 
-                    <h3 className="font-extrabold text-lg sm:text-xl text-white group-hover:text-cyan-300 transition-colors">
+                    <h3 className="font-bold font-heading text-lg sm:text-xl text-white group-hover:text-cyan-300 transition-colors tracking-tight">
                       {item.title}
                     </h3>
                   </div>
 
                   {/* Description */}
-                  <p className="text-slate-200 text-sm leading-relaxed font-normal mt-2 mb-4">
+                  <p className="text-slate-100 text-sm leading-relaxed font-normal mt-2 mb-4">
                     {item.desc}
                   </p>
 
                   {/* Highlight Pill */}
-                  <div className="p-3 rounded-xl bg-white/[0.04] border border-white/10 flex items-center gap-2 text-xs text-slate-200">
+                  <div className="p-3 rounded-xl bg-[#070b18]/70 border border-white/10 flex items-center gap-2 text-xs text-slate-200">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                     <span className="font-medium">{item.bullet}</span>
                   </div>

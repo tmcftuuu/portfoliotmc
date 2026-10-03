@@ -87,55 +87,51 @@ export default function WorkExperienceSection() {
 
   return (
     <section id="experience" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Background glow */}
-      <div className="absolute top-1/4 -right-10 w-[500px] h-[500px] bg-emerald-500/15 rounded-full blur-[120px] pointer-events-none animate-orb-2" />
-      <div className="absolute bottom-10 left-10 w-[450px] h-[450px] bg-cyan-400/15 rounded-full blur-[110px] pointer-events-none animate-orb-1" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 animate-fade-rise">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-xs px-3.5 py-1 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-300" />
+              <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
                 <span>WORK EXPERIENCE</span>
               </span>
-              <div className="h-[1px] w-12 bg-gradient-to-r from-emerald-400/60 to-transparent" />
+              <div className="h-[1px] w-12 bg-gradient-to-r from-cyan-400/60 to-transparent" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
               KINH NGHIỆM LÀM VIỆC
             </h2>
-            <div className="text-base sm:text-lg font-bold text-gradient-rainbow mt-1">
+            <div className="text-base sm:text-lg font-semibold text-gradient-cyan mt-1">
               Thực tập sinh phòng Quản trị tín dụng tại Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV) — Chi nhánh Ngọc Khánh Hà Nội
             </div>
           </div>
 
-          <div className="p-4 rounded-2xl liquid-glass border border-emerald-400/40 flex items-center gap-3.5 shrink-0 shadow-lg">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 shrink-0">
+          <div className="p-4 rounded-2xl liquid-glass liquid-glass-card border border-cyan-400/40 flex items-center gap-3.5 shrink-0 shadow-xl">
+            <div className="w-12 h-12 rounded-xl bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300 shrink-0">
               <Building2 className="w-6 h-6" />
             </div>
             <div>
               <div className="text-[11px] text-slate-300 font-medium">Đơn vị công tác</div>
-              <div className="text-base font-extrabold text-white">BIDV Ngọc Khánh</div>
-              <div className="text-[11px] text-emerald-300 font-semibold">Phòng Quản trị tín dụng</div>
+              <div className="text-base font-bold font-heading text-white">BIDV Ngọc Khánh</div>
+              <div className="text-[11px] text-cyan-300 font-semibold">Phòng Quản trị tín dụng</div>
             </div>
           </div>
         </div>
 
         {/* 3 Core Experience Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
-          {workCards.map((card) => {
+          {workCards.map((card, idx) => {
             const Icon = card.icon;
             return (
               <div
                 key={card.id}
-                className="rounded-3xl liquid-glass liquid-glass-hover p-6 sm:p-7 border border-white/15 flex flex-col justify-between group shadow-xl"
+                className={`rounded-3xl liquid-glass liquid-glass-card p-6 sm:p-7 flex flex-col justify-between group shadow-2xl animate-fade-rise ${idx === 0 ? 'delay-100' : idx === 1 ? 'delay-200' : 'delay-300'}`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${card.color} p-[1.5px] shadow-md`}>
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                     </div>
@@ -144,11 +140,11 @@ export default function WorkExperienceSection() {
                     </span>
                   </div>
 
-                  <h3 className="font-extrabold text-lg sm:text-xl text-white group-hover:text-cyan-300 transition-colors mb-3">
+                  <h3 className="font-bold font-heading text-lg sm:text-xl text-white group-hover:text-cyan-300 transition-colors mb-3 tracking-tight">
                     {card.title}
                   </h3>
 
-                  <p className="text-slate-200 text-sm leading-relaxed font-normal mb-4">
+                  <p className="text-slate-100 text-sm leading-relaxed font-normal mb-4">
                     {card.desc}
                   </p>
 
@@ -175,14 +171,14 @@ export default function WorkExperienceSection() {
         </div>
 
         {/* Interactive Loan Lifecycle Pipeline */}
-        <div className="rounded-3xl liquid-glass p-7 sm:p-8 border border-cyan-400/40 bg-gradient-to-r from-cyan-950/30 via-slate-900/60 to-purple-950/30 shadow-2xl">
+        <div className="rounded-3xl liquid-glass p-7 sm:p-8 border border-cyan-400/40 bg-gradient-to-r from-cyan-950/40 via-slate-900/80 to-indigo-950/40 shadow-2xl animate-fade-rise delay-200">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
             <div>
               <span className="text-xs text-cyan-300 uppercase tracking-wider font-bold flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Quy trình thực tế tại ngân hàng</span>
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1 tracking-tight">
                 Dòng Chảy Của Một Khoản Vay (Loan Lifecycle)
               </h3>
             </div>

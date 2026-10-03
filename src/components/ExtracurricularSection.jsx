@@ -37,44 +37,37 @@ export default function ExtracurricularSection() {
 
   return (
     <section id="extracurricular" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Background glow */}
-      <div className="absolute top-1/4 -right-10 w-[500px] h-[500px] bg-purple-500/15 rounded-full blur-[120px] pointer-events-none animate-orb-2" />
-      <div className="absolute bottom-10 -left-10 w-[450px] h-[450px] bg-pink-500/15 rounded-full blur-[110px] pointer-events-none animate-orb-1" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-rise">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="text-xs px-3.5 py-1 rounded-full bg-pink-500/20 text-pink-300 border border-pink-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-pink-300" />
+            <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
               <span>EXTRACURRICULAR ACTIVITIES</span>
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            HOẠT ĐỘNG NGOẠI KHOÁ
+          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            HOẠT ĐỘNG NGOẠI KHÓA
           </h2>
-          <div className="text-base sm:text-lg font-bold text-gradient-rainbow mt-1">
-            Phó chủ nhiệm CLB Nắng trường THPT Chuyên Thái Nguyên
+          <div className="text-base sm:text-lg font-semibold text-gradient-cyan mt-1">
+            Phó chủ nhiệm CLB Nắng — Trường THPT Chuyên Thái Nguyên
           </div>
-          <p className="text-slate-300 text-sm sm:text-base mt-2.5 font-normal leading-relaxed">
-            Dấu ấn dẫn dắt đội ngũ, giao tiếp thuyết phục đàm phán tài trợ và kỹ năng sáng tạo nội dung truyền thông lan tỏa.
-          </p>
         </div>
 
         {/* 3 Activity Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {activities.map((item) => {
+          {activities.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.num}
-                className="rounded-3xl liquid-glass liquid-glass-hover p-7 border border-white/15 flex flex-col justify-between group relative overflow-hidden shadow-xl"
+                className={`rounded-3xl liquid-glass liquid-glass-card p-7 flex flex-col justify-between group relative overflow-hidden shadow-2xl animate-fade-rise ${idx === 0 ? 'delay-100' : idx === 1 ? 'delay-200' : 'delay-300'}`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
                     <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${item.color} p-[1.5px] shadow-md`}>
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                     </div>
@@ -87,20 +80,20 @@ export default function ExtracurricularSection() {
                     {item.role}
                   </span>
 
-                  <h3 className="font-extrabold text-lg sm:text-xl text-white mt-1.5 mb-3 group-hover:text-pink-300 transition-colors">
+                  <h3 className="font-bold font-heading text-lg sm:text-xl text-white mt-1.5 mb-3 group-hover:text-cyan-300 transition-colors tracking-tight">
                     {item.title}
                   </h3>
 
-                  <p className="text-slate-200 text-sm leading-relaxed font-normal mb-5">
+                  <p className="text-slate-100 text-sm leading-relaxed font-normal mb-5">
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Stat Box at Bottom */}
-                <div className="p-3.5 rounded-2xl bg-black/40 border border-white/10 flex items-center justify-between shadow-inner">
+                <div className="p-3.5 rounded-2xl bg-[#070b18]/70 border border-white/15 flex items-center justify-between shadow-inner">
                   <div>
                     <div className="text-[11px] text-slate-400 font-medium">{item.statLabel}</div>
-                    <div className="text-lg sm:text-xl font-extrabold text-white mt-0.5">
+                    <div className="text-xl font-extrabold font-heading text-white mt-0.5 tracking-tight">
                       {item.stat}
                     </div>
                   </div>

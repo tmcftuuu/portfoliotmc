@@ -27,26 +27,22 @@ export default function LanguageSkillsSection() {
 
   return (
     <section id="languages" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Background glow */}
-      <div className="absolute top-10 left-1/4 w-[450px] h-[450px] bg-cyan-400/15 rounded-full blur-[110px] pointer-events-none animate-orb-1" />
-      <div className="absolute bottom-0 right-10 w-[450px] h-[450px] bg-purple-500/15 rounded-full blur-[120px] pointer-events-none animate-orb-3" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 animate-fade-rise">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
+              <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/15 text-cyan-300 border border-cyan-400/35 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
                 <span>LANGUAGE SKILLS</span>
               </span>
               <div className="h-[1px] w-12 bg-gradient-to-r from-cyan-400/60 to-transparent" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight">
               NGOẠI NGỮ
             </h2>
-            <div className="text-base sm:text-lg font-bold text-gradient-rainbow mt-1">
+            <div className="text-base sm:text-lg font-bold text-gradient-cyan mt-1">
               Năng lực sử dụng ngoại ngữ
             </div>
             <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-xl font-normal leading-relaxed">
@@ -54,7 +50,7 @@ export default function LanguageSkillsSection() {
             </p>
           </div>
 
-          <div className="flex items-center gap-2.5 p-3.5 rounded-2xl liquid-glass border border-cyan-400/40 text-cyan-300 text-xs font-bold shadow-lg">
+          <div className="flex items-center gap-2.5 p-3.5 rounded-2xl liquid-glass liquid-glass-card border border-cyan-400/40 text-cyan-300 text-xs font-bold shadow-lg">
             <Globe2 className="w-4 h-4 text-cyan-400" />
             <span>Song ngữ: Tiếng Anh & Tiếng Trung</span>
           </div>
@@ -65,18 +61,18 @@ export default function LanguageSkillsSection() {
           {languages.map((lang, idx) => (
             <div
               key={idx}
-              className="rounded-3xl liquid-glass liquid-glass-hover p-7 sm:p-8 border border-white/15 flex flex-col justify-between group shadow-xl"
+              className={`rounded-3xl liquid-glass liquid-glass-card p-7 sm:p-8 flex flex-col justify-between group shadow-xl animate-fade-rise ${idx === 0 ? 'delay-100' : 'delay-200'}`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3.5">
                     <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${lang.color} p-[1.5px] shadow-md shrink-0`}>
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <Languages className="w-6 h-6 text-white" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-lg sm:text-xl text-white">
+                      <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
                         {lang.name}
                       </h3>
                       <div className="text-xs text-cyan-300 font-semibold mt-0.5">
@@ -85,7 +81,7 @@ export default function LanguageSkillsSection() {
                     </div>
                   </div>
 
-                  <span className="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-extrabold text-cyan-300 shadow-sm">
+                  <span className="px-3.5 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-xs font-heading font-bold text-cyan-300 shadow-sm">
                     {lang.score}
                   </span>
                 </div>

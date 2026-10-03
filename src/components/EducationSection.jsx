@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Calendar, MapPin, CheckCircle2, Award, Sparkles, BookOpen } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, CheckCircle2, Award, Sparkles } from 'lucide-react';
 
 export default function EducationSection() {
   const educations = [
@@ -15,10 +15,7 @@ export default function EducationSection() {
       badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-400/40",
       bullets: [
         "Sinh viên năm 3 Kinh tế đối ngoại - Trường Đại học Ngoại Thương.",
-        "GPA tích luỹ xuất sắc đạt 3.77 / 4.0.",
-        "Đã được học và thực hành các môn chuyên ngành: Lý thuyết tài chính, Tiền tệ - Ngân hàng, Đầu tư quốc tế,...",
-        "Đạt điểm A trong các môn cơ sở ngành Kinh tế: Kinh tế vi mô, Kinh tế vĩ mô, Nguyên lý kế toán, Nguyên lý quản lý kinh tế,...",
-        "Tham gia Nghiên cứu khoa học (NCKH) cấp trường trong lĩnh vực Tài Chính."
+        "GPA tích luỹ: 3.77 / 4.0."
       ]
     },
     {
@@ -33,68 +30,58 @@ export default function EducationSection() {
       badgeColor: "bg-purple-500/20 text-purple-300 border-purple-400/40",
       bullets: [
         "Cựu học sinh chuyên Anh khóa 33 - Trường THPT Chuyên Thái Nguyên.",
-        "Đạt chứng chỉ tiếng Anh quốc tế IELTS 7.5 và Tiếng Trung cơ bản HSK 3.",
-        "Phó chủ nhiệm CLB Nắng: Điều phối và lãnh đạo đội ngũ trên 50 thành viên.",
-        "Kỹ năng thuyết phục, xin tài trợ chuyên nghiệp và sáng tạo nội dung truyền thông đạt trên 500 lượt tương tác."
+        "Chứng chỉ ngoại ngữ: IELTS 7.5 & Tiếng Trung cơ bản HSK 3."
       ]
     }
   ];
 
   return (
     <section id="education" className="py-14 sm:py-16 relative overflow-hidden scroll-mt-24">
-      {/* Background glow */}
-      <div className="absolute top-10 right-10 w-[450px] h-[450px] bg-purple-500/15 rounded-full blur-[110px] pointer-events-none animate-orb-2" />
-      <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-cyan-400/15 rounded-full blur-[110px] pointer-events-none animate-orb-3" />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="mb-10">
+        <div className="mb-10 animate-fade-rise">
           <div className="flex items-center gap-3 mb-3">
             <span className="text-xs px-3.5 py-1 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 font-bold tracking-wide flex items-center gap-1.5 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
               <span>EDUCATION OVERVIEW</span>
             </span>
-            <div className="h-[1px] w-12 bg-gradient-to-r from-cyan-400/60 to-transparent" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
             HỌC VẤN
           </h2>
-          <div className="text-lg sm:text-xl font-bold text-gradient-rainbow mt-1">
-            Nền tảng giáo dục
+          <div className="text-base sm:text-lg font-semibold text-gradient-cyan mt-1">
+            Nền tảng đào tạo chính quy & chất lượng cao
           </div>
-          <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl font-normal leading-relaxed">
-            Hệ thống đào tạo chính quy, chất lượng cao tại các cơ sở giáo dục danh tiếng: Trường Đại học Ngoại Thương và Trường THPT Chuyên Thái Nguyên.
-          </p>
         </div>
 
-        {/* 2 Main Education Cards */}
+        {/* 2 Concise Education Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {educations.map((item, idx) => (
             <div
               key={idx}
-              className={`rounded-3xl liquid-glass p-7 sm:p-8 border ${item.color} flex flex-col justify-between shadow-xl transition-all duration-300 hover:scale-[1.01]`}
+              className={`rounded-3xl liquid-glass liquid-glass-card p-7 sm:p-8 flex flex-col justify-between shadow-2xl animate-fade-rise ${idx === 0 ? 'delay-100' : 'delay-200'}`}
             >
               <div>
                 {/* Card Top */}
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-600 p-[1.5px] shrink-0 shadow-md">
-                      <div className="w-full h-full bg-[#0a1026] rounded-[14px] flex items-center justify-center text-white">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 p-[1.5px] shrink-0 shadow-md">
+                      <div className="w-full h-full bg-[#070b18] rounded-[14px] flex items-center justify-center text-white">
                         <GraduationCap className="w-6 h-6 text-cyan-300" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-lg sm:text-xl text-white">
+                      <h3 className="font-bold font-heading text-lg sm:text-xl text-white tracking-tight">
                         {item.schoolName}
                       </h3>
-                      <div className={`text-xs font-semibold ${item.accent} mt-0.5`}>
+                      <div className="text-xs font-semibold text-cyan-300 mt-0.5">
                         {item.subTitle}
                       </div>
                     </div>
                   </div>
 
-                  <span className={`px-3 py-1 rounded-full text-xs font-bold border ${item.badgeColor} shrink-0`}>
+                  <span className="px-3.5 py-1 rounded-full text-xs font-bold font-heading bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 shrink-0">
                     {item.gpa}
                   </span>
                 </div>
@@ -111,12 +98,9 @@ export default function EducationSection() {
                   </span>
                 </div>
 
-                {/* Body Content & Key Highlights */}
-                <div className="space-y-2.5 pt-1">
-                  <div className="text-xs font-bold text-slate-300 uppercase tracking-wider">
-                    Nội dung nổi bật:
-                  </div>
-                  <ul className="space-y-2 text-xs sm:text-sm text-slate-200">
+                {/* Concise Highlights */}
+                <div className="space-y-2 pt-1">
+                  <ul className="space-y-2 text-sm text-slate-200">
                     {item.bullets.map((bullet, bIdx) => (
                       <li key={bIdx} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />

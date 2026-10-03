@@ -21,15 +21,22 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Be Vietnam Pro"', '"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
-        heading: ['"Be Vietnam Pro"', '"Plus Jakarta Sans"', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', '"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', '"Be Vietnam Pro"', 'sans-serif'],
+        serif: ['"Playfair Display"', '"Instrument Serif"', 'Georgia', 'serif'],
+        instrument: ['"Instrument Serif"', 'Georgia', 'serif'],
       },
       animation: {
         'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
         'float-slow': 'float 6s ease-in-out infinite',
         'gradient-shift': 'gradientShift 8s ease infinite',
+        'fade-rise': 'fadeRise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both',
       },
       keyframes: {
+        fadeRise: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         pulseGlow: {
           '0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
           '50%': { opacity: '0.6', transform: 'scale(1.05)' },

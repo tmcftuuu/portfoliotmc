@@ -8,7 +8,7 @@ export default function Navbar({ profile }) {
     { label: 'Giới thiệu', href: '#about' },
     { label: 'Học vấn', href: '#education' },
     { label: 'Thành tích', href: '#achievements' },
-    { label: 'Kinh nghiệm BIDV', href: '#experience' },
+    { label: 'Kinh nghiệm làm việc', href: '#experience' },
     { label: 'Ngoại khoá', href: '#extracurricular' },
     { label: 'Ngoại ngữ', href: '#languages' },
     { label: 'Kỹ năng', href: '#skills' },
@@ -16,29 +16,26 @@ export default function Navbar({ profile }) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 py-2.5 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 py-2.5 transition-all duration-300 animate-fade-rise">
       <div className="max-w-6xl mx-auto">
         <nav className="liquid-glass rounded-2xl px-4 sm:px-6 py-2 flex items-center justify-between border border-white/20 shadow-[0_10px_35px_rgba(0,0,0,0.45)]">
           {/* Brand Logo & Name */}
           <a href="#about" className="flex items-center gap-3 shrink-0 group">
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-cyan-400 via-purple-500 to-pink-500 p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-md shrink-0">
-              <div className="w-full h-full bg-[#0a1026] rounded-[10px] flex items-center justify-center font-extrabold text-white text-sm">
+              <div className="w-full h-full bg-[#070b18] rounded-[10px] flex items-center justify-center font-heading font-black text-white text-base">
                 MC
               </div>
             </div>
 
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <span className="font-bold text-white text-sm sm:text-base whitespace-nowrap group-hover:text-cyan-300 transition-colors">
+                <span className="font-heading font-extrabold text-white text-base sm:text-lg whitespace-nowrap group-hover:text-cyan-300 transition-colors tracking-tight">
                   TRỊNH MAI CHI
                 </span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-cyan-500/25 text-cyan-300 font-bold border border-cyan-400/40 whitespace-nowrap">
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-heading font-semibold border border-cyan-400/40 whitespace-nowrap">
                   Mai Chi
                 </span>
               </div>
-              <span className="text-[11px] text-slate-300 hidden sm:inline whitespace-nowrap">
-                Thực tập sinh Ngân Hàng — ĐH Ngoại Thương
-              </span>
             </div>
           </a>
 
