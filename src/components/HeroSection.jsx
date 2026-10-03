@@ -105,7 +105,7 @@ export default function HeroSection({ profile, metrics }) {
                   <div className="relative mb-4">
                     <div className="w-48 h-64 sm:w-56 sm:h-72 rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 shadow-2xl">
                       <img
-                        src="/assets/maichi_avatar.png"
+                        src="./assets/maichi_avatar.png"
                         alt="Trịnh Mai Chi"
                         className="w-full h-full object-cover object-top rounded-[14px] transition-transform duration-700 group-hover:scale-105"
                       />

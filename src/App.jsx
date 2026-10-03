@@ -25,7 +25,7 @@ export default function App() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-60 filter contrast-[1.15] saturate-[1.2] scale-105"
         >
-          <source src="/assets/background-motion.mp4" type="video/mp4" />
+          <source src="./assets/background-motion.mp4" type="video/mp4" />
           <source src="https://cdn.pixabay.com/video/2019/10/09/27669-365224683_medium.mp4" type="video/mp4" />
         </video>
 

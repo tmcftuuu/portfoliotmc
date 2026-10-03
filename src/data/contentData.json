@@ -11,7 +11,7 @@
     "facebook": "Mai Chi Trinh",
     "facebookUrl": "https://www.facebook.com",
     "status": "Sẵn sàng cho cơ hội nghề nghiệp Tài chính - Ngân hàng",
-    "avatar": "/assets/maichi_avatar.png",
+    "avatar": "./assets/maichi_avatar.png",
     "coverVideo": "https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-animation-41484-large.mp4"
   },
   "metrics": {
