@@ -1,0 +1,256 @@
+{
+  "profile": {
+    "name": "TRỊNH MAI CHI",
+    "nickname": "Mai Chi",
+    "title": "Thực tập sinh Ngân hàng | Sinh viên ĐH Ngoại Thương",
+    "tagline": "Định hướng phát triển chuyên sâu trong lĩnh vực Tài chính - Ngân hàng, kết hợp tư duy phân tích tín dụng chuẩn xác và khả năng thích ứng linh hoạt.",
+    "founder": "Kinh tế Đối ngoại — ĐH Ngoại Thương (FTU)",
+    "bio": "Sinh viên năm 3 chuyên ngành Kinh tế đối ngoại tại trường Đại học Ngoại Thương, cựu học sinh chuyên Anh THPT Chuyên Thái Nguyên. Hiện là Thực tập sinh phòng Quản trị tín dụng tại BIDV Chi nhánh Ngọc Khánh, sở hữu nền tảng học thuật xuất sắc (GPA 3.77/4.0, IELTS 7.5, HSK 3) cùng kỹ năng nghiệp vụ thực tế về dòng chảy khoản vay và quản trị tài sản bảo đảm.",
+    "location": "Yên Hoà, Hà Nội",
+    "phone": "0395 569 183",
+    "facebook": "Mai Chi Trinh",
+    "facebookUrl": "https://www.facebook.com",
+    "status": "Sẵn sàng cho cơ hội nghề nghiệp Tài chính - Ngân hàng",
+    "avatar": "/assets/maichi_avatar.png",
+    "coverVideo": "https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-animation-41484-large.mp4"
+  },
+  "metrics": {
+    "gpa": "3.77 / 4.0",
+    "ielts": "7.5",
+    "hsk": "HSK 3",
+    "bank": "BIDV Ngọc Khánh",
+    "teamSize": "50+ Thành viên",
+    "engagement": "500+ Tương tác",
+    "school": "ĐH Ngoại Thương (FTU)",
+    "highSchool": "Chuyên Thái Nguyên (K33)"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "number": "01",
+      "tag": "ABOUT ME",
+      "title": "TRỊNH MAI CHI",
+      "subtitle": "Thực tập sinh Ngân hàng",
+      "heroHeadline": "Tài Chính — Ngân Hàng: Chuẩn xác, Bản lĩnh & Đam mê.",
+      "quote": "Định hướng nghề nghiệp: Làm việc và cống hiến trong lĩnh vực Tài chính - Ngân hàng.",
+      "badges": [
+        "Sinh viên năm 3 ĐH Ngoại Thương",
+        "Thực tập sinh BIDV Ngọc Khánh",
+        "GPA 3.77 / 4.0",
+        "IELTS 7.5"
+      ]
+    },
+    {
+      "id": "s2",
+      "number": "02",
+      "tag": "KEY HIGHLIGHTS",
+      "title": "DẤU ẤN VÀ CHỈ SỐ NỔI BẬT",
+      "subtitle": "Key Highlights & Academic Metrics",
+      "highlight": "GPA 3.77/4.0 FTU | IELTS 7.5 | Thực tập Quản trị Tín dụng BIDV"
+    },
+    {
+      "id": "s3",
+      "number": "03",
+      "tag": "EDUCATION OVERVIEW",
+      "title": "HỌC VẤN",
+      "subtitle": "Nền tảng giáo dục vững chắc",
+      "description": "Nền tảng đào tạo chính quy từ các ngôi trường danh tiếng hàng đầu: Đại học Ngoại Thương và THPT Chuyên Thái Nguyên.",
+      "schools": [
+        {
+          "schoolName": "Trường Đại học Ngoại Thương (FTU Hà Nội)",
+          "degree": "Sinh viên năm 3 — Chuyên ngành Kinh tế đối ngoại",
+          "period": "2023 — Hiện tại",
+          "gpa": "GPA: 3.77 / 4.0 (Xuất sắc)",
+          "desc": "Được đào tạo toàn diện về kinh tế quốc tế, thương mại, tài chính - tiền tệ và tư duy phân tích thị trường sắc bén.",
+          "badge": "Top University in Economics",
+          "color": "from-cyan-500 to-blue-600"
+        },
+        {
+          "schoolName": "Trường THPT Chuyên Thái Nguyên",
+          "degree": "Cựu học sinh Chuyên Anh khóa 33",
+          "period": "2020 — 2023",
+          "gpa": "IELTS 7.5",
+          "desc": "Tốt nghiệp lớp chuyên Anh khóa 33, xây dựng khả năng ngoại ngữ vượt trội cùng năng lực tư duy logic và hoạt động phong trào sôi nổi.",
+          "badge": "Chuyên Anh K33",
+          "color": "from-purple-500 to-pink-600"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "number": "04",
+      "tag": "ACADEMIC ACHIEVEMENTS",
+      "title": "THÀNH TÍCH HỌC TẬP",
+      "subtitle": "TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG — Chuyên ngành: Kinh tế Đối ngoại",
+      "achievements": [
+        {
+          "code": "ACH_01",
+          "title": "GPA Tích luỹ Xuất sắc: 3.77 / 4.0",
+          "category": "Điểm tích lũy học tập",
+          "desc": "Duy trì phong độ học tập ổn định trong top đầu lớp chuyên ngành Kinh tế Đối ngoại tại trường Đại học Ngoại Thương.",
+          "icon": "Award",
+          "color": "from-cyan-400 to-blue-500"
+        },
+        {
+          "code": "ACH_02",
+          "title": "Đạt điểm A các môn cơ sở ngành Kinh tế",
+          "category": "Nền tảng kinh tế học",
+          "desc": "Đạt kết quả điểm A ấn tượng tại các học phần cốt lõi: Kinh tế vi mô, Kinh tế vĩ mô, Nguyên lý kế toán, Nguyên lý quản lý kinh tế,...",
+          "icon": "TrendingUp",
+          "color": "from-purple-400 to-indigo-500"
+        },
+        {
+          "code": "ACH_03",
+          "title": "Thực hành sâu các môn chuyên ngành Tài chính",
+          "category": "Kiến thức chuyên môn",
+          "desc": "Đã được học và thực hành các môn: Lý thuyết tài chính, Tiền tệ - Ngân hàng, Đầu tư quốc tế,... nắm bắt bản chất các công cụ và thị trường tài chính.",
+          "icon": "BookOpen",
+          "color": "from-pink-400 to-rose-500"
+        },
+        {
+          "code": "ACH_04",
+          "title": "Nghiên cứu khoa học (NCKH) cấp trường",
+          "category": "Lĩnh vực Tài Chính",
+          "desc": "Tích cực tham gia đề tài Nghiên cứu khoa học cấp trường trong lĩnh vực Tài chính, rèn luyện tư duy nghiên cứu, xử lý số liệu và phân tích định lượng.",
+          "icon": "Sparkles",
+          "color": "from-emerald-400 to-teal-500"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "number": "05",
+      "tag": "WORK EXPERIENCE",
+      "title": "KINH NGHIỆM LÀM VIỆC",
+      "subtitle": "Thực tập sinh phòng Quản trị tín dụng tại Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV)",
+      "company": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV) — Chi nhánh Ngọc Khánh Hà Nội",
+      "role": "Thực tập sinh phòng Quản trị tín dụng",
+      "workItems": [
+        {
+          "title": "Vận hành hệ thống phần mềm nghiệp vụ BIDV",
+          "detail": "Được tiếp xúc và tìm hiểu cách vận hành các phần mềm nghiệp vụ cốt lõi của BIDV (SVS, ECM, CSR,..) trong việc nhập liệu thông tin, khởi tạo hợp đồng, kiểm tra lịch trả nợ và hạn mức tín dụng của khách hàng.",
+          "tag": "BIDV Softwares: SVS, ECM, CSR"
+        },
+        {
+          "title": "Nắm vững toàn diện dòng chảy của một khoản vay (Loan Lifecycle)",
+          "detail": "Hiểu rõ từng bước trong quy trình cấp tín dụng: Từ khâu tiếp nhận hồ sơ từ phòng Khách hàng ➔ Kiểm tra tính hợp pháp/hợp lệ ➔ Soạn thảo hợp đồng ➔ Giải ngân vốn ➔ Quản lý tài sản bảo đảm (TSBĐ) ➔ Thu hồi nợ và tất toán / giải chấp.",
+          "tag": "Loan Workflow Mastery"
+        },
+        {
+          "title": "Soạn thảo hồ sơ & hợp đồng tín dụng chuẩn xác",
+          "detail": "Trực tiếp tham gia lập và kiểm tra các loại Hợp đồng tín dụng, Hợp đồng thế chấp / cầm cố tài sản bảo đảm (TSBĐ), đảm bảo tuân thủ nghiêm ngặt quy định pháp lý và quy chế nội bộ ngân hàng.",
+          "tag": "Credit & Mortgage Contracts"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "number": "06",
+      "tag": "EXTRACURRICULAR ACTIVITIES",
+      "title": "HOẠT ĐỘNG NGOẠI KHOÁ",
+      "subtitle": "Phó chủ nhiệm CLB Nắng — Trường THPT Chuyên Thái Nguyên",
+      "extracurricular": {
+        "role": "Phó Chủ nhiệm CLB Nắng",
+        "org": "CLB Nắng — Trường THPT Chuyên Thái Nguyên",
+        "highlights": [
+          {
+            "title": "Lãnh đạo & Quản lý đội ngũ trên 50 thành viên",
+            "desc": "Kỹ năng lãnh đạo và làm việc nhóm hiệu quả, phân công nhiệm vụ và gắn kết hơn 50 thành viên hoạt động năng nổ trong các dự án thiện nguyện và truyền thông."
+          },
+          {
+            "title": "Kỹ năng thuyết phục & Vận động tài trợ chuyên nghiệp",
+            "desc": "Giao tiếp tự tin, chuẩn bị hồ sơ tài trợ và trực tiếp đàm phán thành công với các nhà tài trợ, doanh nghiệp để gây quỹ cho hoạt động của CLB."
+          },
+          {
+            "title": "Sáng tạo nội dung & Truyền thông lan tỏa (500+ Tương tác)",
+            "desc": "Kỹ năng viết và truyền đạt thông tin rõ ràng, hấp dẫn; các bài đăng truyền thông trên mạng xã hội đạt lượng tương tác cao trên 500 người mỗi bài."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "number": "07",
+      "tag": "LANGUAGE & SKILLS",
+      "title": "BỘ KỸ NĂNG & NGOẠI NGỮ",
+      "subtitle": "Năng lực chuyên môn và công cụ làm việc thực tế",
+      "languages": [
+        {
+          "name": "Tiếng Anh (English)",
+          "level": "IELTS 7.5",
+          "status": "Thành thạo",
+          "desc": "Giao tiếp lưu loát, đọc hiểu tài liệu tài chính quốc tế, soạn thảo văn bản học thuật và báo cáo chuẩn mực.",
+          "percent": 90,
+          "color": "from-cyan-400 to-blue-500"
+        },
+        {
+          "name": "Tiếng Trung (Chinese)",
+          "level": "HSK 3 (Cơ bản)",
+          "status": "Giao tiếp cơ bản",
+          "desc": "Nắm vững ngữ pháp cơ bản, tự tin trong các tình huống giao tiếp thông thường và trao đổi cơ bản.",
+          "percent": 65,
+          "color": "from-pink-400 to-purple-500"
+        }
+      ],
+      "skillsList": [
+        {
+          "name": "Tin học văn phòng & Báo cáo",
+          "items": "Word, Excel (tính toán hàm tài chính, quản lý dữ liệu), PowerPoint thuyết trình cơ bản và nâng cao."
+        },
+        {
+          "name": "Thuyết trình & Làm việc nhóm",
+          "items": "Khả năng diễn đạt ý tưởng mạch lạc trước đám đông, phối hợp ăn ý và giải quyết vấn đề linh hoạt cùng đội ngũ."
+        },
+        {
+          "name": "Giao tiếp với khách hàng",
+          "items": "Thấu hiểu nhu cầu, lắng nghe tích cực và ứng xử tinh tế, tạo dựng niềm tin với đối tác và khách hàng."
+        },
+        {
+          "name": "Quản lý thời gian & Tổ chức công việc",
+          "items": "Kỹ năng sắp xếp thứ tự ưu tiên, làm việc kỷ luật và hoàn thành đúng hạn các báo cáo, hồ sơ tín dụng."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "number": "08",
+      "tag": "CAREER VISION",
+      "title": "ĐỊNH HƯỚNG SỰ NGHIỆP",
+      "subtitle": "Mục tiêu phát triển trong ngành Tài chính - Ngân hàng",
+      "visionGoals": [
+        {
+          "phase": "Mục tiêu Ngắn hạn",
+          "role": "Thực tập sinh ➔ Chuyên viên Quản trị tín dụng / Khách hàng",
+          "desc": "Hoàn thiện xuất sắc kỳ thực tập tại BIDV, nắm bắt toàn diện các nghiệp vụ tín dụng, giải ngân, xử lý hồ sơ tài sản bảo đảm và thi tốt nghiệp loại Xuất sắc tại FTU."
+        },
+        {
+          "phase": "Mục tiêu Trung & Dài hạn",
+          "role": "Chuyên viên Tài chính - Ngân hàng Cao cấp",
+          "desc": "Phát triển chuyên sâu về thẩm định tín dụng doanh nghiệp, quản trị rủi ro tài chính hoặc phát triển sản phẩm ngân hàng số, đóng góp giá trị bền vững cho tổ chức."
+        }
+      ],
+      "coreValues": [
+        "Chính trực & Minh bạch trong từng con số",
+        "Cẩn trọng & Tuân thủ pháp lý tín dụng nghiêm ngặt",
+        "Chủ động học hỏi công nghệ và phần mềm mới",
+        "Tận tâm vì trải nghiệm tối ưu của khách hàng"
+      ]
+    },
+    {
+      "id": "s9",
+      "number": "09",
+      "tag": "CONTACT INFORMATION",
+      "title": "THÔNG TIN LIÊN HỆ",
+      "subtitle": "Kết nối trực tiếp cùng Trịnh Mai Chi",
+      "ctaText": "Sẵn sàng đón nhận cơ hội học hỏi, thực tập và làm việc trong lĩnh vực Tài chính - Ngân hàng.",
+      "contactInfo": {
+        "phone": "0395 569 183",
+        "facebook": "Mai Chi Trinh",
+        "address": "Yên Hoà, Hà Nội",
+        "university": "Trường Đại học Ngoại Thương (FTU)",
+        "email": "maichi.ftu@gmail.com",
+        "availability": "Sẵn sàng phỏng vấn và tiếp nhận công việc thực tập / chính thức."
+      }
+    }
+  ]
+}
