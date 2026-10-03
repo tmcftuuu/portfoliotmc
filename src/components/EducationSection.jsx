@@ -50,9 +50,6 @@ export default function EducationSection() {
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
             HỌC VẤN
           </h2>
-          <div className="text-base sm:text-lg font-semibold text-gradient-cyan mt-1">
-            Nền tảng đào tạo chính quy & chất lượng cao
-          </div>
         </div>
 
         {/* 2 Concise Education Cards */}

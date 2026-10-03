@@ -28,7 +28,7 @@ export default function HeroSection({ profile, metrics }) {
             <div className="p-5 sm:p-6 rounded-2xl liquid-glass liquid-glass-hover border-l-4 border-cyan-400 relative shadow-xl">
               <div className="text-xs text-cyan-300 font-bold uppercase tracking-wider mb-2 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Vision (Tầm nhìn):</span>
+                <span>Vision:</span>
               </div>
               <p className="text-white text-base sm:text-lg leading-relaxed font-medium">
                 "Làm việc và cống hiến chuyên sâu trong lĩnh vực Tài chính - Ngân hàng."
@@ -38,7 +38,7 @@ export default function HeroSection({ profile, metrics }) {
             {/* Key Highlights / Bullet Points */}
             <div className="p-5 sm:p-6 rounded-2xl liquid-glass border border-white/10 space-y-3">
               <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider">
-                Key Highlights / Điểm nổi bật:
+                Key Highlights:
               </div>
               <ul className="space-y-2.5 text-sm text-slate-100 font-normal">
                 <li className="flex items-start gap-2.5">

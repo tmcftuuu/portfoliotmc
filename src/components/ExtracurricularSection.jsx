@@ -103,27 +103,6 @@ export default function ExtracurricularSection() {
             );
           })}
         </div>
-
-        {/* Bottom Banner */}
-        <div className="mt-8 rounded-3xl liquid-glass p-6 border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-purple-950/30 via-slate-900/60 to-pink-950/30 shadow-xl">
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/40 text-purple-300 flex items-center justify-center shrink-0">
-              <Sparkles className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="font-bold text-sm sm:text-base text-white">
-                Rèn Luyện Kỹ Năng Mềm Toàn Diện
-              </div>
-              <div className="text-xs text-slate-300 mt-0.5 font-normal">
-                Quản lý con người, đàm phán tài chính và truyền thông là nền tảng bổ trợ đắc lực cho công việc ngân hàng.
-              </div>
-            </div>
-          </div>
-
-          <span className="text-xs font-semibold px-3.5 py-1.5 rounded-xl bg-purple-500/20 text-purple-300 border border-purple-400/40 whitespace-nowrap">
-            CLB Nắng — K33 Chuyên TN
-          </span>
-        </div>
       </div>
     </section>
   );
